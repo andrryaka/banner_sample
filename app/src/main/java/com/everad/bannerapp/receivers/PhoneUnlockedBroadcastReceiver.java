@@ -8,7 +8,7 @@ import android.util.Log;
 import java.util.concurrent.TimeUnit;
 
 public class PhoneUnlockedBroadcastReceiver extends BroadcastReceiver {
-    private static final long BANNER_SHOW_DELAY = 5000/*TimeUnit.MINUTES.toMillis(1)*/;
+    private static final long BANNER_SHOW_DELAY = TimeUnit.MINUTES.toMillis(1);
 
     @Override
     public void onReceive(Context context, Intent intent) {
